@@ -39,7 +39,7 @@ function renderblogs() {
   // push to the local storage
   localStorage.setItem('theBlogs',JSON.stringify(ArrayofBlogs));
   //  call to the list blogs page
-  window.location.href = "blog.html";
+  window.location.href = "./blog.html";
 };
 
 // function for the submit bottom click
