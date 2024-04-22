@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Load two css files, one for de PAGE and other for the FORM -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>BLOG landing page</title>
+  </head>
+  
+  <body>
+    <header>
+        <h2>Flavio Alejandro Castorena Bravo</h2>
+    </header>
+
+    <main>
+
+        <!-- the left site of the web page with a header and image  -->
+        <section class="landingPageLeft">
+            <h1>My First Blog</h3>
+            <img src="./assets/images/old-man-3d-avatar-free-pik.jpg" alt="Professor 3d avatar id 2151419473 by FREEP!K">   
+        </section>
+
+        <!-- the right side of the web page with the form -->
+        <section class="landingPageRight">
+            <form>
+              <!-- A form with the inputs and a submit bottom -->
+                <label for="inputUname">User</label>
+                <input type="text" id="inputUname" placeholder="User name">
+                <label for="inputBtitle">Title</label>
+                <input type="text" id="inputBtitle" placeholder="Title">
+                <label for="inputBcontent"></label>
+                <p>Content</p>
+                <textarea id="inputBcontent" cols="56" rows="8" placeholder="Content"></textarea>
+                <input type="submit" id="formSubmit">
+            </form>
+            <!-- header to show a message in case of incomplete form -->
+            <h3 id="errorMessage"></h3>      
+        </section>
+    </main>
+
+    <footer>
+        <h4>Made with love</h4> 
+    </footer>
+    
+    <!-- reference to the javasript file -->
+    <script src="./assets/js/form.js"></script>
+  </body>
+
+</html>
