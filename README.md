@@ -26,7 +26,8 @@ During this project I learned:
     - What it is and how it works the DOM (document object model)
     - How I can follow the flow of the program since de CONSOLE of Dev Tools of Chrome.
     - How to address de elements of the HTML page from javaScript program.
-    - How to change the atributes of an HTML element from de javaScript program. 
+    - How to change the atributes of an HTML element from de javaScript program.
+    - And a very important thing, the powerful of the dev tools CONSOLE as a debugger. 
 
 ```
 
