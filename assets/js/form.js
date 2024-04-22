@@ -22,18 +22,23 @@ let ArrayofBlogs = [
 ];
 
 // loading the array of blogs from local storage "theBlogs"
-function initProcess() {
+function initProcess() {   
+  // load if the localstorage is not empty
+  if (localStorage.length == 0) {
+      // nothing to do 
+    } else {
   ArrayofBlogs = JSON.parse(localStorage.getItem('theBlogs'));
-}
+    }
+};
 
 function renderblogs() {      
   // pass values of the input to the input Array
-  console.log("Hola mundo");
+  // console.log("Hola mundo");
   oneblogArray = {
     "name": String(userName.value),
     "title": String(blogTitle.value),
     "content": String(blogContent.value)
-  }
+  };
   // adding a row to the array of objets 
   ArrayofBlogs.push(oneblogArray);
   // push to the local storage
@@ -56,7 +61,7 @@ submitButton.addEventListener('click', function (event) {
   else {
       // call function to render the blogs
       renderblogs();
-  }
+  };
 });      
 
 // call the init function
