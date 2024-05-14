@@ -24,7 +24,9 @@ let ArrayofBlogs = [
 // loading the array of blogs from local storage "theBlogs"
 function initProcess() {   
   // load if the localstorage is not empty
-  if (localStorage.length == 0) {
+  // if (localStorage.length == 0) {
+  if (localStorage.getItem("theBlogs") == null) {
+      // console.log('localstorage empty');
       // nothing to do 
     } else {
   ArrayofBlogs = JSON.parse(localStorage.getItem('theBlogs'));
